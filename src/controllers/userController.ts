@@ -22,3 +22,7 @@ export async function getUserById(req: Request, res: Response<ApiResponse<User>>
   user ? res.json({success: true, data: user}) : res.status(404).send({ success: false, error: 'User not found' });
 }
 
+export async function about(req: Request, res: Response<ApiResponse<string>>) {
+  res.json({success: true, data: "关于我们"})
+}
+
