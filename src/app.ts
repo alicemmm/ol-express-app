@@ -1,6 +1,6 @@
 import express, { Request, Response } from 'express';
-import { setupDatabase } from './db';
-import userRoutes from './routers/userRoutes';
+import { setupDatabase } from './config/db';
+import userRoutes from './routers/api/userRoutes';
 
 const app = express();
 const port = 3000;

@@ -1,6 +1,6 @@
 import { Request, Response } from 'express';
 import { User } from '../models/User';
-import { initDB } from '../db';
+import { initDB } from '../config/db';
 
 export async function getUsers(req: Request, res: Response<ApiResponse<User[]>>) {
   try {
